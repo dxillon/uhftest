@@ -6,6 +6,7 @@ import Home from './components/Home';
 import TeamPage from './components/TeamPage';
 import AboutPage from './components/AboutPage';
 import PrivacyPolicy from './components/PrivacyPolicy';
+import PolicyPage from './components/PolicyPage';
 import CookiePolicy from './components/CookiePolicy';
 import ContactPage from './components/ContactPage';
 import TermsConditions from './components/TermsConditions';
@@ -106,6 +107,7 @@ function App() {
           <Route path="/careers/apply" element={<JobApplicationForm />} />
           <Route path="/team/apply" element={<JobApplicationForm2 />} />
           <Route path="/privacy" element={<PrivacyPolicy />} />
+          <Route path="/policy" element={<PolicyPage />} />
           <Route path="/cookies" element={<CookiePolicy />} />
           <Route path="/terms" element={<TermsConditions />} />
           <Route path="/project/:id" element={<ProjectDetail />} />
