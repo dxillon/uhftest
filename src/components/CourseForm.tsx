@@ -38,7 +38,7 @@ const CourseForm: React.FC<CourseFormProps> = ({ courseTitle, price, planType, o
       await onSubmit(formData);
     } finally {
       setIsLoading(false);
-    }
+    } 
   };
 
 
@@ -53,15 +53,6 @@ const CourseForm: React.FC<CourseFormProps> = ({ courseTitle, price, planType, o
 
   const navigate = useNavigate();
 
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setIsLoading(true);
-    try {
-      await onSubmit(formData);
-    } finally {
-      setIsLoading(false);
-    }
-  };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({
