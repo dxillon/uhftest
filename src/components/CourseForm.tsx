@@ -20,7 +20,7 @@ const CourseForm: React.FC<CourseFormProps> = ({ courseTitle, price, planType, o
     window.scrollTo(0, 0); // Scroll to top when the form opens
   }, []);
 
-
+  
 
   const [termsAccepted, setTermsAccepted] = useState(false);
   const [showTermsError, setShowTermsError] = useState(false);
@@ -41,6 +41,7 @@ const CourseForm: React.FC<CourseFormProps> = ({ courseTitle, price, planType, o
     } 
   };
 
+const [isLoading, setIsLoading] = useState(false);
 
   const [formData, setFormData] = useState({
     name: '',
@@ -65,7 +66,7 @@ const CourseForm: React.FC<CourseFormProps> = ({ courseTitle, price, planType, o
     handleBack();
   };
 
-  const [isLoading, setIsLoading] = useState(false);
+  
 
   const getButtonStyle = () => {
     if (!paymentStatus) return 'bg-gradient-to-r from-red-500 to-orange-500 hover:from-red-600 hover:to-orange-600';
