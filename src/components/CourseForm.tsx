@@ -431,7 +431,7 @@ const CourseForm: React.FC<CourseFormProps> = ({ courseTitle, price, planType, o
                     >
                       <social.icon className="w-5 h-5" />
                     </motion.a>
-                  ))}
+                  ))} 
                 </div>
               </div>
 
