@@ -107,7 +107,9 @@ function App() {
           <Route path="/careers/apply" element={<JobApplicationForm />} />
           <Route path="/team/apply" element={<JobApplicationForm2 />} />
           <Route path="/privacy" element={<PrivacyPolicy />} />
-          <Route path="/policy" element={<PolicyPage />} />
+          <Route path="/refund-policy" element={<PolicyPage />} />
+          <Route path="/shipping-policy" element={<PolicyPage />} />
+          <Route path="/cancellation-policy" element={<PolicyPage />} />
           <Route path="/cookies" element={<CookiePolicy />} />
           <Route path="/terms" element={<TermsConditions />} />
           <Route path="/project/:id" element={<ProjectDetail />} />
